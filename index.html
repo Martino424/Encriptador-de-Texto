@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <img src="./Assests/logos/Logo.png" alt=" logo de Alura">
+    </header>
+    <main>
+        <form class="form__section">
+            <textarea class="form__input" name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+ <div class="btn_container">
+        <div class="submit__container">
+           
+                <div class="alert__msj"><img src="./Assests/logos/Alerta.png" alt="logo alerta"><span>Solo letras minúsculas y sin acentos</span></div>
+
+            </div>
+            <input class="form__btn" type="submit" value="Encriptar">
+            <input class="form__btn form__btn__secundary" type="submit" value="Desencriptar">
+
+        </div>
+    </form>
+        <aside class="resultado">
+            <img src="./Assests/logos/Imagenes/Muñeco.png" alt="imagen de muñeco" class="resultado__img">
+            <div class="loader hidden"></div>
+            <div class="resultado__container">
+              <h3 class="resultado__titulo">Ningún mensaje fue encontrado</h3>
+              <p class="resultado__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+              <button class="resul__btn form__btn
+              form__btn__secundary hidden">Copiar
+              </button>
+            </div>
+          </aside>
+    </main>
+   <script src="./Encriptador.js"></script>
+</body>
+</html>
